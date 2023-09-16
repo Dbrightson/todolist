@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!-- This declares the document type and version of HTML being used. -->
+
+<html lang="en"> <!-- This declares the language of the HTML document. -->
+
+<head>
+    <meta charset="UTF-8"> <!-- This sets the character encoding to UTF-8, which includes most characters from different languages. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This meta tag defines the viewport settings for responsive design. -->
+    <title>To-Do List</title> <!-- This sets the title of the web page that appears in the browser's title bar. -->
+    <link rel="stylesheet" href="todolist.css"> <!-- This links an external CSS stylesheet to style the page. -->
+</head>
+
+<body>
+    <div class="container"> <!-- This creates a container div to hold the content of the page. -->
+
+        <h1>To-Do List</h1> <!-- This adds a heading displaying "To-Do List". -->
+
+        <div class="task-input"> <!-- This div contains an input field and a button for adding tasks. -->
+
+            <input type="text" id="task" placeholder="Add a new task..."> <!-- This is an input field for entering new tasks. It has an id "task" for JavaScript manipulation and a placeholder text. -->
+
+            <button id="add-task">Add</button> <!-- This is a button with the id "add-task" used to add new tasks. -->
+
+        </div>
+
+        <ul id="task-list"></ul> <!-- This creates an unordered list with the id "task-list" where the tasks will be displayed. -->
+
+    </div> <!-- Closes the container div. -->
+
+    <script src="todolist.js"></script> <!-- This includes an external JavaScript file for dynamic functionality, typically for managing tasks in this case. -->
+
+</body>
+</html>

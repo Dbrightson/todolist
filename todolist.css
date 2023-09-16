@@ -1,0 +1,81 @@
+/* CSS Styles */
+
+body {
+    font-family: Arial, sans-serif; /* Sets the font family for the entire page. */
+    background-color: #f5f5f5; /* Sets the background color of the page. */
+    margin: 0; /* Removes default margin. */
+    padding: 0; /* Removes default padding. */
+}
+
+.container {
+    max-width: 400px; /* Sets the maximum width for the container. */
+    margin: 0 auto; /* Centers the container horizontally. */
+    background-color: #fff; /* Sets the background color of the container. */
+    padding: 20px; /* Adds padding inside the container. */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a box shadow to the container. */
+    border-radius: 5px; /* Rounds the corners of the container. */
+}
+
+h1 {
+    text-align: center; /* Centers the text within the <h1> element. */
+}
+
+.task-input {
+    display: flex; /* Displays the child elements in a flex layout. */
+    margin-bottom: 10px; /* Adds margin at the bottom of the .task-input div. */
+}
+
+input[type="text"] {
+    flex: 1; /* Allows the input field to grow and fill available space. */
+    padding: 8px; /* Adds padding inside the input field. */
+    border: 1px solid #ccc; /* Sets a border around the input field. */
+    border-radius: 3px; /* Rounds the corners of the input field. */
+    font-size: 16px; /* Sets the font size for the input field. */
+}
+
+button {
+    padding: 8px 12px; /* Adds padding inside the button. */
+    background-color: #007bff; /* Sets the background color of the button. */
+    border: none; /* Removes the button border. */
+    color: #fff; /* Sets the text color of the button. */
+    border-radius: 3px; /* Rounds the corners of the button. */
+    cursor: pointer; /* Changes the cursor to a pointer on hover. */
+}
+
+ul {
+    list-style-type: none; /* Removes the default list bullet points. */
+    padding: 0; /* Removes padding from the <ul> element. */
+}
+
+li {
+    display: flex; /* Displays list items in a flex layout. */
+    justify-content: space-between; /* Distributes content evenly in the list item. */
+    align-items: center; /* Vertically aligns content to the center. */
+    background-color: #f9f9f9; /* Sets the background color of list items. */
+    border: 1px solid #ddd; /* Sets a border around list items. */
+    margin-bottom: 5px; /* Adds margin at the bottom of list items. */
+    padding: 8px; /* Adds padding inside list items. */
+    border-radius: 3px; /* Rounds the corners of list items. */
+}
+
+li button {
+    background-color: #ff3b30; /* Sets the background color of remove buttons. */
+    color: #fff; /* Sets the text color of remove buttons. */
+    border: none; /* Removes the button border. */
+    padding: 3px 6px; /* Adds padding inside remove buttons. */
+    border-radius: 3px; /* Rounds the corners of remove buttons. */
+    cursor: pointer; /* Changes the cursor to a pointer on hover. */
+}
+
+/* CSS styles for checkbox and label */
+
+.task-checkbox:checked + label::before {
+    content: "\2714"; /* Unicode checkmark character. */
+    color: green; /* Sets the color of the checkmark to green. */
+    font-size: 16px; /* Sets the font size of the checkmark. */
+    margin-right: 5px; /* Adds margin to the right of the checkmark. */
+}
+
+.task-checkbox + label {
+    cursor: pointer; /* Changes the cursor to a pointer when interacting with the label. */
+}
